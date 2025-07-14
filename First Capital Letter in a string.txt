@@ -1,0 +1,13 @@
+/* Question 1.
+Capitalize First Letter
+Write a function that takes 
+a string and returns it with 
+the first letter of each word 
+capitalized.*/
+capitalizeFirstLetter=(string) =>{
+    let word = string.charAt(0);
+    let wordCase = word.toUpperCase();
+    let newWord = wordCase + string.slice(1); 
+    console.log(newWord);
+}
+capitalizeFirstLetter("hello");

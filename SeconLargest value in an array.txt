@@ -1,0 +1,33 @@
+/*Question 4
+Find the Second Largest Number
+Write a function that returns the 
+second largest number in an array 
+of numbers.*/
+
+largestNumber=(array)=>{
+//Finding first Largest Number First.    
+    let firstLargest = array[0];
+    for(let i = 0;i< array.length; i++){
+       
+        if(array[i]>firstLargest){
+            firstLargest = array[i];
+        }
+    }
+//Pushing values into new array without the first largest value.
+    let newArr = [];
+    for(let i = 0;i< array.length; i++){
+        if(array[i]!== firstLargest){
+        newArr.push(array[i]);
+       }
+    }
+//Finding the second largest value.    
+    let secondLargest = newArr[0];
+    for(let i = 0;i< newArr.length; i++){
+      if(newArr[i]>secondLargest){
+            secondLargest = newArr[i];
+        }
+    }
+    console.log("The second largest value is: " + secondLargest);
+}
+
+largestNumber([1,4,5,7,2,3]);

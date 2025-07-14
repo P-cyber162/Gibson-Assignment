@@ -1,0 +1,19 @@
+/*Question 2.
+Remove Duplicates from Array
+Write a function that removes 
+duplicate values from an array 
+without using Set.*/
+
+removeDuplicate=(array)=>{
+    for(let i = 0;i< array.length; i++){
+        for(let j = i+1 ;j< array.length; j++){
+            if(array[i]===array[j]){
+                 array.splice(j,j);
+            }
+        }
+    }
+    for(let i = 0;i< array.length; i++){
+        console.log(array[i]);
+    }
+};
+removeDuplicate([1,4,5,7,5,4,3,5]);
