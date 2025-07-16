@@ -10,4 +10,4 @@ capitalizeFirstLetter=(string) =>{
     let newWord = wordCase + string.slice(1); 
     console.log(newWord);
 }
-capitalizeFirstLetter("hello");
+capitalizeFirstLetter(word);// Where word is any string.
